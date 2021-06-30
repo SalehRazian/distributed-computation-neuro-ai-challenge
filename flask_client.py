@@ -166,5 +166,5 @@ class Compute(Resource):
 api.add_resource(Compute, "/")  # Add to the API resources
 
 if __name__ == "__main__":
-    client = Client("tcp://192.168.1.117:55063")  # Client connection - Change when necessary
-    app.run(host="127.0.0.1", port=5000, debug=True)  # Flask server connection details - Change when necessary
+    client = Client("tcp://127.0.0.1:55062")  # Client connection - Change when necessary
+    app.run(host="127.0.0.1", port=5000, debug=False)  # Flask server connection details - Change when necessary

@@ -9,9 +9,9 @@ async def worker_function(scheduler_address):
     :param scheduler_address: The address of the scheduler
     :return: None
     """
-    w = await Worker(scheduler_address)  # The worker is running
-    await w.finished()                   # Wait until the worker closes
+    worker = await Worker(scheduler_address)  # The worker is running
+    await worker.finished()                   # Wait until the worker closes
 
 # Change address when necessary
-asyncio.get_event_loop().run_until_complete(worker_function("tcp://192.168.1.117:55063"))
+asyncio.get_event_loop().run_until_complete(worker_function("tcp://127.0.0.1:55062"))
 

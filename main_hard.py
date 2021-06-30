@@ -1,9 +1,9 @@
-from api import compute_this
+from dist_computation import compute_this
 
 
 @compute_this
 def func(x):
-    for i in range(10000):
+    for i in range(100000000):
         for j in range(len(x)):
             x[j] += i
     return x
