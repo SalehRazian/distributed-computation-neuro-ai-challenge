@@ -6,7 +6,7 @@ from werkzeug.utils import secure_filename
 from dask.distributed import Client
 
 # The path to the upload folder "save"
-UPLOAD_FOLDER = "C:/Users/HP/PycharmProjects/neuroai/save/"
+UPLOAD_FOLDER = "save/"
 
 # Initial variables
 app = Flask(__name__)

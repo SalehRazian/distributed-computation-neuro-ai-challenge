@@ -4,6 +4,8 @@
 
 Using the files in this prototype, you can do distributed computing using multiple
 machines.
+This project was made for Neuro Challenge:
+https://github.com/neuro-ai-dev/distribute-challenge
 
 ###
 # Server Side
@@ -24,7 +26,7 @@ will be submitted and it will act as a submission point for any user to submit
 their function for computation.
 
 Make sure that you have a directory called save in the same directory that 
-contains the "flask_client.py" file.
+contains the "flask_client.py" file ("/save").
 
 ###
 # User/Client Side
@@ -44,7 +46,10 @@ Make sure that the api base will connect to the flask server.
 # Requirements
 ###
 
+Use Python3
+
 For the "scheduler.py" and the "worker.py":
+asyncio
 "dask[complete]"
 
 For the "flask_client.py":
