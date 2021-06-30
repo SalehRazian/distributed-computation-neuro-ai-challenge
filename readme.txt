@@ -36,7 +36,7 @@ Make sure the "dist_computation.py" and your code are in the same directory.
 from dist_computation import compute_this
 Decorate the function that will be send for computation by: @compute_this
 Run the function as: func.compute(x)
-Make sure that the api base will connect to the flask server.
+Make sure that the dist_computation base variable connects to the flask server.
 
 "main_demo.py" is a demo file that is used for testing purposes.
 "main_easy.py" is a demo file that is used to test easy problems.
@@ -89,3 +89,14 @@ project.
 Pickle and Dill:
 Serializing the function using Dill is not safe according to some sources, 
 however, it was used in this project for demonstration purposes.
+
+Potential Problems:
+During the testing phase of the project, it is important to note that tasks were
+sometimes allocated to one worker. This could be a problem that needs to be
+investigated.
+
+Some Improvements:
+Using Jug would be an improvement as it gives us more control over the tasks. Saving the tasks and their results at the user's local machine could be beneficial
+in case the server goes down during a long computation. Making the flask_client 
+a scheduler and a worker could be beneficial to maximize efficient usage of 
+resources.
