@@ -68,3 +68,24 @@ string
 dill
 os
 
+###
+# Notes
+###
+
+Python and Java:
+I have used Python programming language to make this setup since on the Neuro 
+Challenge page, the function provided was a python function.
+
+Dask and Jug:
+The choice of using Dask for this project was mainly to provide a working project.
+This is because Dask handles the scheduler, worker and client setup.
+Jug would breakdown the tasks using TaskGenerator() which gives us more freedom to 
+send tasks between machines for computation. 
+
+Flask API:
+I have some experience in working with Flask and for that I used it in this 
+project.
+
+Pickle and Dill:
+Serializing the function using Dill is not safe according to some sources, 
+however, it was used in this project for demonstration purposes.
